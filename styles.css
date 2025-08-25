@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=MedievalSharp&family=Phudu:wght@300..900&family=Press+Start+2P&family=Roboto+Slab:wght@100..900&family=Tektur:wght@400..900&display=swap');
 
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 :root {
   --bg-color: #f4f7fb;
   --text-primary: #2c3e50;
@@ -56,6 +60,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 .nav-links li {
   margin-left: 1em;
@@ -479,11 +484,26 @@ i[data-lucide] {
 }
 
 .close-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   position: absolute;
+  font-size: 1.8em;
   top: 15px;
   right: 15px;
   cursor: pointer;
   color: var(--accent);
+  z-index: 1000;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.close-btn:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 .carousel {
