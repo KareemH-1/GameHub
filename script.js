@@ -22,11 +22,23 @@ hamburger.addEventListener('click', () => {
 });
 
 const toggle = document.querySelector('.toggle-input');
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark');
+  toggle.checked = true;
+} else {
+  document.body.classList.remove('dark');
+  toggle.checked = false;
+}
+
 toggle.addEventListener('change', function() {
   if (this.checked) {
     document.body.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
   } else {
     document.body.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
   }
 });
 
