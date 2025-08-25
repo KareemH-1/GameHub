@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyGameHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+      <div class="button-border">
+        <div class="button-base">
+          <button class="start-button press-start-2p-regular">
+            <i data-lucide="play" class="press-start-2p-regular"></i> Start
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content" style="display: none">
+      <nav class="navbar">
+        <div class="logo"><i data-lucide="gamepad"></i> MyGameHub</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#home"><i data-lucide="home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#games"><i data-lucide="layout-grid"></i> Games</a>
+          </li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" class="toggle-input" />
+              <span class="slider">
+                <i data-lucide="moon"></i>
+                <i data-lucide="sun"></i>
+              </span>
+            </label>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <i data-lucide="menu"></i>
+        </div>
+      </nav>
+
+      <div id="home">
+        <section class="intro">
+          <h1><i data-lucide="zap"></i> Welcome to MyGameHub</h1>
+          <p>
+            Hi! I'm Kareem, and this is where I showcase my game development
+            projects. You can explore the projects, download them, or check out
+            my GitHub and LinkedIn!
+          </p>
+        </section>
+
+        <section class="links">
+          <a
+            href="https://github.com/KareemH-1"
+            target="_blank"
+            class="link-btn"
+          >
+            <i data-lucide="github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kareem-ahmed-h/"
+            target="_blank"
+            class="link-btn"
+          >
+            <i data-lucide="linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="https://kareemh-1.github.io/Portfolio/"
+            target="_blank"
+            class="link-btn"
+          >
+            <i data-lucide="user"></i> My Portfolio
+          </a>
+  
+        </section>
+      </div>
+
+      <hr />
+      <div id="games" class="games-grid"></div>
+
+      <div id="game-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close-btn">X</span>
+          <div class="carousel">
+            <img src="" alt="Game Screenshot" class="carousel-img" />
+            <button class="prev"><i data-lucide="chevron-left"></i></button>
+            <button class="next"><i data-lucide="chevron-right"></i></button>
+          </div>
+
+          <h2 id="modal-title"></h2>
+          <p id="modal-tech"></p>
+          <p id="modal-desc"></p>
+          <div class="credits-con">
+            <h3 id="credH"></h3>
+            <p id="credits"></p>
+          </div>
+          <div class="modal-links">
+            <a href="#" target="_blank" class="modal-btn" id="modal-github">
+              <i data-lucide="github"></i> GitHub
+            </a>
+            <a href="#" target="_blank" class="modal-btn" id="modal-game">
+              <i data-lucide="play-circle"></i> Play Game
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
