@@ -44,10 +44,15 @@ toggle.addEventListener('change', function() {
 
 const gamesData = [
   {
-    title: "Roll a ball",
-    images: ["./GameImgs/RollABall/image1.png", "./GameImgs/RollABall/image2.png" , "./GameImgs/RollABall/image3.png"],
-    shortDesc: "Gather points and avoid getting caught by the ai following you",
-    longDesc: "My first game made in Unity, where you control a ball to collect objects while avoiding an AI that follows you. This game was made following a unity tutorial: \"https://learn.unity.com/project/roll-a-ball\".",
+    title: "Roll a Ball",
+    images: [
+      "./GameImgs/RollABall/image1.png",
+      "./GameImgs/RollABall/image2.png",
+      "./GameImgs/RollABall/image3.png"
+    ],
+    shortDesc: "Gather points and avoid getting caught by the AI following you.",
+    longDesc:
+      'My first game made in Unity, where you control a ball to collect objects while avoiding an AI that follows you. This game was made by following a Unity tutorial: "https://learn.unity.com/project/roll-a-ball".',
     tech: ["Unity", "C#"],
     credits: [
       { type: "Tutorial", links: ["https://learn.unity.com/project/roll-a-ball"] }
@@ -58,9 +63,13 @@ const gamesData = [
 
   {
     title: "Space Shooter",
-    images: ["./GameImgs/Spaceshooter/spaceShooter.png", "./GameImgs/Spaceshooter/GameOver.png"],
+    images: [
+      "./GameImgs/Spaceshooter/spaceShooter.png",
+      "./GameImgs/Spaceshooter/GameOver.png"
+    ],
     shortDesc: "Fast-paced space shooting with enemies!",
-    longDesc: "A fast-paced 2D space shooting game where you dodge or shoot enemies, collect power-ups, and try to get a higher score. Designed using Unity and C#.",
+    longDesc:
+      "A fast-paced 2D space shooting game where you dodge or shoot enemies, collect power-ups, and try to get a high score. Designed using Unity and C#.",
     tech: ["Unity", "C#"],
     github: "https://github.com/KareemH-1/GameDevelopment/tree/main/Unity/SpaceGame",
     game: "https://mega.nz/file/mFFyDbDT#8G1kn2l_nwQ74BSL2S9537YM_WPPX0Fn6_Nac47gLYs"
@@ -68,15 +77,60 @@ const gamesData = [
 
   {
     title: "Pong 3D",
-    images: ["./GameImgs/Pong/main.png", "./GameImgs/Pong/menu.png" , "./GameImgs/Pong/AI_Diff.png" , "./GameImgs/Pong/GameSettings.png" , "./GameImgs/Pong/Pause.png"],
-    shortDesc: "Pong but in 3D!",
-    longDesc: "A 3D version of pong, this game was made by following a tutorial on youtube: \"https://www.youtube.com/watch?v=b3xgCUlst88\", then expanding upon it. The game features PvP and PvAI with 3 difficulty levels, and a variety of game panels.",
+    images: [
+      "./GameImgs/Pong/main.png",
+      "./GameImgs/Pong/menu.png",
+      "./GameImgs/Pong/AI_Diff.png",
+      "./GameImgs/Pong/GameSettings.png",
+      "./GameImgs/Pong/Pause.png"
+    ],
+    shortDesc: "Pong, but in 3D!",
+    longDesc:
+      'A 3D version of Pong. This game was made by following a tutorial on YouTube: "https://www.youtube.com/watch?v=b3xgCUlst88", then expanding upon it. The game features PvP and PvAI with three difficulty levels and a variety of game panels.',
     tech: ["Unity", "C#"],
-    credits: [{ type: "Tutorial", links: ["https://www.youtube.com/watch?v=b3xgCUlst88"] }],
+    credits: [
+      { type: "Tutorial", links: ["https://www.youtube.com/watch?v=b3xgCUlst88"] }
+    ],
     github: "https://github.com/KareemH-1/GameDevelopment/tree/main/Unity/Pong3D",
     game: "https://mega.nz/file/jE13yBLB#hnX6Q9JYT--i4LNeOXMAVLavUnpbPPXArNWby1Na8hM",
     mobileDownload: "https://mega.nz/file/mcUkwAID#OyinMBXW2Cns3RGH-EqBYXUVl3ErL859Eb29BMhqXeM"
-  }
+  },
+
+  {
+    title: "ASCII Game",
+    images: [
+      "./GameImgs/ASCII_game/main.png",
+      "./GameImgs/ASCII_game/menu.png",
+      "./GameImgs/ASCII_game/Platform.png",
+      "./GameImgs/ASCII_game/boss.png"
+    ],
+    shortDesc: "A terminal-based platformer ASCII game.",
+    longDesc:
+      "This game was made as a group project for an assignment using only C++. The game features ASCII art, player movement, shooting, different weapons and enemies, elevators and ladders, traps, and a boss.",
+    tech: ["C++"],
+    credits: [
+      { type: "Team", links: ["https://github.com/MazenMDev" , "https://github.com/AhmedEmad375"] }
+    ],
+    github: "https://github.com/KareemH-1/GameProject-CS102x",
+    game: "https://github.com/KareemH-1/GameProject-CS102x/blob/main/Game.cpp",
+   },
+
+  {
+    title: "Web Games",
+    images: [
+      "./GameImgs/WebGames/image2.png",
+      "./GameImgs/WebGames/image4.png",
+      "./GameImgs/WebGames/image1.png",
+      "./GameImgs/WebGames/image3.png",
+      "./GameImgs/WebGames/image5.png"
+    ],
+    shortDesc: "A collection of web-based games.",
+    longDesc:
+      "This project showcases a variety of simple web-based games developed using HTML, CSS, and JavaScript, If you want to play any game of these click on Play Game then search for \"Game\"",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/KareemH-1/Front-end-projects",
+    game: "https://kareemh-1.github.io/Front-end-projects/",
+   }
 ];
 
 const gamesContainer = document.getElementById("games");
