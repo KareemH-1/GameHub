@@ -75,7 +75,26 @@ const gamesData = [
     game: "https://mega.nz/file/mFFyDbDT#8G1kn2l_nwQ74BSL2S9537YM_WPPX0Fn6_Nac47gLYs"
   },
 
+  
+
   {
+    title: "Web Games",
+    images: [
+      "./GameImgs/WebGames/image2.png",
+      "./GameImgs/WebGames/image4.png",
+      "./GameImgs/WebGames/image1.png",
+      "./GameImgs/WebGames/image3.png",
+      "./GameImgs/WebGames/image5.png"
+    ],
+    shortDesc: "A collection of web-based games.",
+    longDesc:
+      "This project showcases a variety of simple web-based games developed using HTML, CSS, and JavaScript, If you want to play any game of these click on Play Game then search for \"Game\"",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/KareemH-1/Front-end-projects",
+    game: "https://kareemh-1.github.io/Front-end-projects/",
+   },
+
+   {
     title: "Pong 3D",
     images: [
       "./GameImgs/Pong/main.png",
@@ -97,40 +116,24 @@ const gamesData = [
   },
 
   {
-    title: "ASCII Game",
+    title: "Top Down Shooter",
     images: [
-      "./GameImgs/ASCII_game/main.png",
-      "./GameImgs/ASCII_game/menu.png",
-      "./GameImgs/ASCII_game/Platform.png",
-      "./GameImgs/ASCII_game/boss.png"
+      "./GameImgs/TopDownShooter/Screenshot 2025-09-03 210302.png",
+      "./GameImgs/TopDownShooter/Screenshot 2025-09-03 210318.png",
+      "./GameImgs/TopDownShooter/Screenshot 2025-09-03 210337.png",
+      "./GameImgs/TopDownShooter/Screenshot 2025-09-03 210406.png",
+      "./GameImgs/TopDownShooter/Screenshot 2025-09-03 210617.png"
     ],
-    shortDesc: "A terminal-based platformer ASCII game.",
-    longDesc:
-      "This game was made as a group project for an assignment using only C++. The game features ASCII art, player movement, shooting, different weapons and enemies, elevators and ladders, traps, and a boss.",
-    tech: ["C++"],
+    shortDesc: "Top down shooter game with various features.",
+    longDesc: " This is a top-down shooter game, that took me a lot of time and effort to develop. It features various weapons, clean UI , enemies following player, skills system , shop , drops , waves system, currency, message toasters and alot more.",
+    tech: ["Unity" , "C#"],
     credits: [
-      { type: "Team", links: ["https://github.com/MazenMDev" , "https://github.com/AhmedEmad375"] }
+      { type: "Credits", links: ["./TopDownCredits.html"]  }
     ],
-    github: "https://github.com/KareemH-1/GameProject-CS102x",
-    game: "https://github.com/KareemH-1/GameProject-CS102x/blob/main/Game.cpp",
-   },
-
-  {
-    title: "Web Games",
-    images: [
-      "./GameImgs/WebGames/image2.png",
-      "./GameImgs/WebGames/image4.png",
-      "./GameImgs/WebGames/image1.png",
-      "./GameImgs/WebGames/image3.png",
-      "./GameImgs/WebGames/image5.png"
-    ],
-    shortDesc: "A collection of web-based games.",
-    longDesc:
-      "This project showcases a variety of simple web-based games developed using HTML, CSS, and JavaScript, If you want to play any game of these click on Play Game then search for \"Game\"",
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/KareemH-1/Front-end-projects",
-    game: "https://kareemh-1.github.io/Front-end-projects/",
+    github: "#",
+    game: "https://mega.nz/file/mYUDQRAB#bL9UexOtVQ2_OImQW_Aqgi1dL7xNKAyCRO3nZMiu-Yo",
    }
+
 ];
 
 const gamesContainer = document.getElementById("games");
